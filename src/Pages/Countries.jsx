@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom"
 import { data } from "../data";
+import "./Pages.css"
 
 export const Countries = () => {
     const {continent} = useParams();

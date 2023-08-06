@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom"
 import { data } from "../data";
+import "./Pages.css"
 
 export const Destinations = () => {
     const { continent, country } = useParams();
@@ -13,6 +14,7 @@ export const Destinations = () => {
     return (
         <div>
             <h1>Destinations</h1>
+            <div className="list">
             {
                        requiredCountry.destinations.map(item => (
                        // <div key={item.id} onClick={() => navigate(`./${item.name}`)}>{item.name}</div>
@@ -25,6 +27,8 @@ export const Destinations = () => {
                       </div>
                     ))
                 }
+            </div>
+           
         </div>
     )
 }
